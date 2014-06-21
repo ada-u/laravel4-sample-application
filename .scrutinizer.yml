@@ -23,8 +23,7 @@ tools:
             paths: ["app/models/*", "tests/*"]
     php_loc:
         enabled: true
-        filter:
-            paths: ["app/models/*", "tests/*"]
+        excluded_dirs: ["vendor", "public", "bootstrap"]
     php_mess_detector:
         enabled: true
         config:
@@ -37,11 +36,7 @@ tools:
         filter:
             paths: ["app/models/*", "tests/*"]
     php_analyzer:
-        enabled: true
+        enabled: false
         filter:
-            paths: ["app/models/*", "tests/*"]
-    php_hhvm:
-        enabled: true
-        filter:
-            paths: ["app/models/*", "tests/*"]
+            paths: ["app/models/*"]
     sensiolabs_security_checker: true

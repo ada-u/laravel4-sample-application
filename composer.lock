@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0ad87b2ae9a7d6c29c8e932789a9715c",
+    "hash": "035fddbec96870b2137bc261ec8e5855",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1647,6 +1647,56 @@
     ],
     "packages-dev": [
         {
+            "name": "fabpot/php-cs-fixer",
+            "version": "v0.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabpot/PHP-CS-Fixer.git",
+                "reference": "1fb00de8b165ddb521af842f90154aaf77fd58e7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabpot/PHP-CS-Fixer/zipball/1fb00de8b165ddb521af842f90154aaf77fd58e7",
+                "reference": "1fb00de8b165ddb521af842f90154aaf77fd58e7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.6",
+                "sebastian/diff": "1.1.*",
+                "symfony/console": "~2.1",
+                "symfony/filesystem": "~2.1",
+                "symfony/finder": "~2.1"
+            },
+            "bin": [
+                "php-cs-fixer"
+            ],
+            "type": "application",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\CS": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "A script to automatically fix Symfony Coding Standard",
+            "time": "2014-06-21 08:22:48"
+        },
+        {
             "name": "guzzle/guzzle",
             "version": "v3.9.1",
             "source": {
@@ -2660,7 +2710,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "sensiolabs/security-checker": 20,
-        "satooshi/php-coveralls": 20
+        "satooshi/php-coveralls": 20,
+        "fabpot/php-cs-fixer": 0
     },
     "platform": [
 

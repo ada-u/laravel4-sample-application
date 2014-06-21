@@ -6,7 +6,7 @@ build:
           code: |
             echo "php version $(php --version) running"
       - script:
-          name: Add timezone.ini
+          name: add timezone.ini
           code: phpenv config-add .wercker/php/timezone.ini
       - script:
           name: install dependencies
@@ -19,3 +19,7 @@ build:
       - script:
           name: run ecurity-checker to find vulnerabilities
           code: php vendor/bin/security-checker security:check composer.lock
+
+      - script:
+          name: run php-cs-fixer
+          code: php vendor/bin/php-cs-fixer fix --verbose --diff --dry-run --fixers=-psr0 app

@@ -16,3 +16,6 @@ build:
           code: |
             php vendor/bin/phpunit -c phpunit.xml.dist
             php vendor/bin/coveralls -v -c .coveralls.yml
+      - script:
+          name: run ecurity-checker to find vulnerabilities
+          code: php vendor/bin/security-checker security:check composer.lock

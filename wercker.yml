@@ -2,8 +2,17 @@ box: wercker/php
 build:
     steps:
       - script:
+          name: echo php information
+          code: |
+            echo "php version $(php --version) running"
+      - script:
+          name: Add timezone.ini
+          code: phpenv config-add .wercker/php/timezone.ini
+      - script:
           name: install dependencies
           code: composer install --no-interaction --prefer-source
       - script:
-          name: run unit tests
-          code: phpunit
+          name: run unit tests and send coverage report to coveralls.io
+          code: |
+            php vendor/bin/phpunit -c phpunit.xml.dist
+            php vendor/bin/coveralls -v -c .coveralls.yml

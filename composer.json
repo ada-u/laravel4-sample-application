@@ -6,6 +6,12 @@
 	"require": {
 		"laravel/framework": "4.2.*"
 	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/satooshi/php-coveralls"
+		}
+	],
 	"require-dev": {
 		"phpunit/phpunit": "4.1.*",
 		"sensiolabs/security-checker": "dev-master",

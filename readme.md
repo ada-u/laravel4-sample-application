@@ -6,4 +6,6 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ada-u/laravel4-sample-application/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ada-u/laravel4-sample-application/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/ada-u/laravel4-sample-application/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/ada-u/laravel4-sample-application/?branch=master)
 
-# Setup
+# Platform
+
+https://github.com/ada-u/laravel4-platform
